@@ -107,15 +107,14 @@ export default function AdList() {
                 <TableCell>Summary</TableCell>
                 <TableCell>Contrat</TableCell>
                 <TableCell>Wage</TableCell>
-
               </TableRow>
             </TableHead>
             <TableBody>
-              {ads.map((ad) => (
+              {ads.map((ad, item) => (
                 <TableRow key={ad.ID}>
                   <TableCell align="left">{ad.id}</TableCell>
                   <TableCell align="center">{ad.title}</TableCell>
-                  <TableCell align="center">{ad.summary}</TableCell>
+                  <TableCell align="left">{ad.summary}</TableCell>
                   <TableCell align="right">{ad.contrat}</TableCell>
                   <TableCell align="right">{ad.wage}</TableCell>
                   <TableCell align="center">

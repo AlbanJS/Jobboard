@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Ads from "./components/Ads/Ads";
 import AdCreate from "./components/AdCreate/AdCreate";
-import FetchApi from "./components/FetchApi/FecthApi";
+import Card from "./components/Card/Card";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route exact path="/" element={<FetchApi/>} />
+          <Route exact path="/" element={<Card/>} />
           <Route exact path="/create" element={<AdCreate/>} />
           <Route exact path="/ads" element={<Ads/>} />
         </Routes>
